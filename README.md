@@ -25,3 +25,17 @@ And:
 ```commandline
 howzap
 ```
+
+## Fail?
+
+Try to do this:
+
+```commandline
+cd && sudo apt install rename && git clone https://github.com/how-dev/how-zap.git && rename "s/how-zap/.howzap/" how-zap && cd ~/.howzap/ && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && deactivate && cd'
+```
+
+And...
+
+```commandline
+cd ~/.howzap && source venv/bin/activate && python3 main.py && deactivate && cd
+```
