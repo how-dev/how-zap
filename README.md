@@ -11,11 +11,15 @@ Attention: Make sure you have the latest version of python installed on your mac
 To install, run the following command in your terminal:
 
 ```commandline
-echo "alias install_howzap='cd && git clone https://github.com/how-dev/how-zap.git && mv how-zap .how-zap cd ~/.how-zap && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && deactivate && cd'" >> .bashrc && echo "alias howzap='cd ~/.how-zap && source venv/bin/activate && python main.py && deactivate && cd'" >> .bashrc && install_howzap
+echo "alias install_howzap='cd && sudo apt install rename && git clone https://github.com/how-dev/how-zap.git && rename "s/how-zap/.howzap/" how-zap && cd ~/.howzap/ && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && deactivate && cd'" >> .bashrc
 ```
 
 Now just run the command below:
 
+```commandline
+install_howzap
+```
+And:
 ```commandline
 howzap
 ```
